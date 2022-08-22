@@ -8,20 +8,23 @@
 
     <TextView
         android:id="@+id/title_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="264dp"
+        android:layout_height="83dp"
         android:text="Calculator"
+        android:textAlignment="center"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.079" />
 
     <Button
         android:id="@+id/button_subs"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:onClick="findSub"
         android:text="-"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,12 +38,12 @@
         android:id="@+id/button_add"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginEnd="28dp"
+        android:onClick="findSum"
         android:text="+"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_subs"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.664"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.521" />
@@ -49,6 +52,7 @@
         android:id="@+id/button_div"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:onClick="findDiv"
         android:text="÷"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -62,11 +66,12 @@
         android:id="@+id/button_mult"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:onClick="findMult"
         android:text="×"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintEnd_toStartOf="@+id/button_div"
+        app:layout_constraintHorizontal_bias="0.664"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.698" />
@@ -78,10 +83,11 @@
         android:ems="10"
         android:hint="Second Number"
         android:inputType="textPersonName"
+        android:textAlignment="center"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintHorizontal_bias="0.722"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.339" />
@@ -93,10 +99,11 @@
         android:ems="10"
         android:hint="First Number"
         android:inputType="textPersonName"
+        android:textAlignment="center"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.339" />
@@ -105,14 +112,14 @@
         android:id="@+id/output"
         android:layout_width="156dp"
         android:layout_height="46dp"
-        android:text="TextView"
+        android:onClick="findSum"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.208" />
+        app:layout_constraintVertical_bias="0.22" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
