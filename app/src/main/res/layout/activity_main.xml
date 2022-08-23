@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background1"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,13 +13,14 @@
         android:layout_height="83dp"
         android:text="Calculator"
         android:textAlignment="center"
+        android:textColor="#F1F1F1"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.079" />
+        app:layout_constraintVertical_bias="0.081" />
 
     <Button
         android:id="@+id/button_subs"
@@ -84,6 +86,8 @@
         android:hint="Second Number"
         android:inputType="textPersonName"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FBFBFB"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -100,31 +104,62 @@
         android:hint="First Number"
         android:inputType="textPersonName"
         android:textAlignment="center"
+        android:textColor="#FFFFFF"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintVertical_bias="0.339"
+        tools:textColorHint="#FFFFFF" />
 
     <TextView
         android:id="@+id/output"
         android:layout_width="156dp"
         android:layout_height="46dp"
+        android:hint="Result"
         android:onClick="findSum"
         android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintVertical_bias="0.249"
+        tools:textColorHint="#FFFDFD" />
 
     <androidx.constraintlayout.widget.Barrier
         android:id="@+id/barrier2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="left" />
+
+    <Button
+        android:id="@+id/power"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:onClick="findPwr"
+        android:text="Power"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/root"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/root"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:onClick="findRoot"
+        android:text="Root"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.885" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

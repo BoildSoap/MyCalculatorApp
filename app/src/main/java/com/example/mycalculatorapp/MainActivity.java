@@ -62,4 +62,26 @@ public class MainActivity extends AppCompatActivity {
         numberSumTV.setText("" + div);
     }
 
+    public void findPwr(View view) {
+        EditText number1ET = findViewById(R.id.textview_input1);
+        EditText number2ET = findViewById(R.id.textview_input2);
+        TextView numberSumTV = findViewById(R.id.output);
+
+        double num1 = Integer.parseInt((number1ET.getText().toString()));
+        double num2 = Integer.parseInt((number2ET.getText().toString()));
+        double pwr =  Math.pow(num1,num2);
+
+        numberSumTV.setText("" + pwr);
+    }
+    public void findRoot(View view) {
+        EditText number1ET = findViewById(R.id.textview_input1);
+        EditText number2ET = findViewById(R.id.textview_input2);
+        TextView numberSumTV = findViewById(R.id.output);
+
+        double num1 = Integer.parseInt((number1ET.getText().toString()));
+        double num2 = Integer.parseInt((number2ET.getText().toString()));
+        double root =  Math.pow(num1, 1/num2);
+
+        numberSumTV.setText("" + root);
+    }
 }
