@@ -27,8 +27,8 @@ public class MainActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
         }else{
-            double num1 = Integer.parseInt((number1ET.getText().toString()));
-            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
             double sum = num1 + num2;
             numberSumTV.setText("" + sum);
             }
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }
         else {
-            double num1 = Integer.parseInt((number1ET.getText().toString()));
-            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
             double sub = num1 - num2;
             numberSumTV.setText("" + sub);
         }
@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
         }else {
-            double num1 = Integer.parseInt((number1ET.getText().toString()));
-            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
             double mult = num1 * num2;
             numberSumTV.setText("" +Math.round(mult * 100.0) / 100.0);
 
@@ -78,8 +78,8 @@ public class MainActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
         }else {
-            double num1 = Integer.parseInt((number1ET.getText().toString()));
-            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
             if(num2 == 0){
                 Toast toast = Toast.makeText(context, "Don't Divide by 0", duration);
                 toast.show();
@@ -99,8 +99,8 @@ public class MainActivity extends AppCompatActivity {
             Toast toast = Toast.makeText(context, text, duration);
             toast.show();
         }else{
-            double num1 = Integer.parseInt((number1ET.getText().toString()));
-            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
             double pwr = Math.pow(num1, num2);
             numberSumTV.setText("" +Math.round(pwr * 100.0) / 100.0);
         }
@@ -115,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
             toast.show();
         }else{
 
-            double num1 = Integer.parseInt((number1ET.getText().toString()));
-            double num2 = Integer.parseInt((number2ET.getText().toString()));
+            double num1 = Double.parseDouble((number1ET.getText().toString()));
+            double num2 = Double.parseDouble((number2ET.getText().toString()));
             if(num2==0){
                 Toast toast = Toast.makeText(context, "Not Possible", duration);
                 toast.show();
